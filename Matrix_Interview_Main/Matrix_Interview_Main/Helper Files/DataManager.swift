@@ -121,7 +121,7 @@ open class DataManager {
     }
     
     func makeCountry(from json: NSDictionary) -> Country {
-        print(json)
+        
         let name = json[Constants.Keys.name] as? String ?? "undefined"
         let nativeName = json[Constants.Keys.nativeName] as? String ?? "undefined"
         let area = json[Constants.Keys.area] as? Double ?? 0.0
